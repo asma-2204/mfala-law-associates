@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-analytics-id" content="G-Z1LBFZ5JJM">
+
+<title>Cyber Law Lawyer in Lahore | Muhammad Faheem Anjum Law Associates</title>
+<link rel="canonical" href="https://muhammadfaheemanjumlawassociates.netlify.app/cyber-law.html">
+<meta name="description" content="Cyber law legal services in Lahore concerning online harassment, unauthorized access, digital evidence and related legal proceedings.">
+
+
+<link rel="stylesheet" href="style.css">
+
+<script defer src="analytics.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://muhammadfaheemanjumlawassociates.netlify.app/cyber-law.html#legalservice",
+  "name": "Cyber Law Lawyer in Lahore",
+  "url": "https://muhammadfaheemanjumlawassociates.netlify.app/cyber-law.html",
+  "provider": {
+    "@id": "https://muhammadfaheemanjumlawassociates.netlify.app/#organization"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Lahore"
+  },
+  "image": "https://muhammadfaheemanjumlawassociates.netlify.app/Images/logo.png"
+}
+</script>
+</head>
+
+<body>
+
+<section class="practice">
+
+<h2>Cyber Law</h2>
+
+<div class="service-detail">
+
+<h3>Overview</h3>
+
+<p>
+Cyber crimes have become increasingly common in Pakistan due to the rapid growth of digital communication, social media platforms, online banking and e-commerce activities. Individuals and businesses frequently face issues such as online fraud, identity theft, cyber harassment, unauthorized access to digital accounts, online defamation, financial scams and misuse of personal information. These offences can cause significant financial, personal and reputational harm.
+</p>
+
+<p>
+The Prevention of Electronic Crimes Act (PECA) and other applicable laws provide legal remedies against cyber offences and electronic crimes. However, cyber-related disputes often involve technical evidence and specialized legal procedures that require professional legal guidance and representation.
+</p>
+<p>
+Muhammad Faheem Anjum Law Associates provides professional legal services relating to Cyber Law and digital offences. Our legal team assists clients in reporting cyber crimes, pursuing legal remedies, defending allegations and representing individuals and businesses before the relevant authorities and courts.
+</p>
+
+<p>
+Whether the matter involves cyber harassment, online fraud, identity theft, data misuse, digital defamation or other technology-related disputes, our firm remains committed to protecting our clients' rights through effective legal representation.
+</p>
+<h3>Services</h3>
+
+<ul>
+<li>Cyber Crime Complaints</li>
+<li>Online Fraud Cases</li>
+<li>Cyber Harassment Matters</li>
+<li>Digital Defamation Cases</li>
+<li>PECA Related Litigation</li>
+<li>Legal Consultation</li>
+<li>Court Representation</li>
+</ul>
+<h3>Required Documents</h3>
+
+<ul>
+<li>CNIC Copy</li>
+<li>Screenshots & Digital Evidence</li>
+<li>Relevant Communications</li>
+<li>Transaction Records</li>
+<li>Complaint Documents</li>
+<li>Supporting Evidence</li>
+</ul>
+
+<h3>Court Procedure</h3>
+
+<ul>
+<li>Case Assessment</li>
+<li>Evidence Review</li>
+<li>Complaint Preparation</li>
+<li>Proceedings Before Relevant Authorities</li>
+<li>Hearings & Representation</li>
+<li>Final Orders</li>
+</ul>
+<h3>Contact Us</h3>
+
+<a href="tel:+923154943960" class="btn">Call Now</a>
+
+<a href="https://wa.me/923044943960" class="btn-outline">WhatsApp</a>
+
+<p>
+Email:
+<a href="mailto:faheemanjum772@gmail.com">
+faheemanjum772@gmail.com
+</a>
+</p>
+
+</div>
+
+</section>
+
+
+<!-- STRATEGIC ARTICLES -->
+<section class="practice related-articles"><h2>Related Legal Articles</h2><div class="practice-grid">
+<a href="articles/cyber-law.html" class="practice-card"><h3>Cyber Law Guide</h3></a>
+</div></section>
+<!-- STRATEGIC ARTICLES END -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const contactTargets = [
+    { text: '03154943960', href: 'tel:03154943960', label: 'Call 03154943960' },
+    { text: '03044943960', href: 'https://wa.me/923044943960', label: 'WhatsApp 03044943960' },
+    { text: 'faheemanjum772@gmail.com', href: 'mailto:faheemanjum772@gmail.com', label: 'Email faheemanjum772@gmail.com' },
+    { text: 'Saleem Manzil', href: 'https://www.google.com/maps/search/?api=1&query=Saleem%20Manzil%20Near%20AG%20Office%20Lahore', label: 'Open office location in Google Maps' }
+  ];
+
+  function findTextElement(text) {
+    const all = document.querySelectorAll('body *');
+    for (const el of all) {
+      if (el.children.length === 0 && (el.textContent || '').includes(text)) return el;
+    }
+    return null;
+  }
+
+  function isContactSection(el) {
+    let p = el;
+    for (let i = 0; i < 6 && p; i++, p = p.parentElement) {
+      const t = (p.textContent || '').toLowerCase();
+      if (t.includes('get in touch') || t.includes('contact us')) return p;
+    }
+    return null;
+  }
+
+  contactTargets.forEach(function(target) {
+    const textEl = findTextElement(target.text);
+    if (!textEl) return;
+
+    // Walk upward to the smallest container that contains this contact item but
+    // does not contain another contact target.
+    let card = textEl.parentElement;
+    while (card && card.parentElement) {
+      const section = isContactSection(card);
+      const ownText = (card.textContent || '');
+      const otherTarget = contactTargets.some(t => t !== target && ownText.includes(t.text));
+      if (section && !otherTarget) break;
+      card = card.parentElement;
+    }
+    if (!card || card.dataset.fullContactCard === '1') return;
+
+    card.dataset.fullContactCard = '1';
+    card.style.cursor = 'pointer';
+    card.setAttribute('role', 'link');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', target.label);
+
+    const go = function() { window.location.href = target.href; };
+    card.addEventListener('click', function(e) {
+      // Let an existing nested link behave normally; otherwise make the whole card active.
+      if (e.target.closest('a')) return;
+      go();
+    });
+    card.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        go();
+      }
+    });
+  });
+});
+</script>
+
+</body>
+
+</html>

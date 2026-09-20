@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-analytics-id" content="G-Z1LBFZ5JJM">
+
+<title>Corporate and Tax Lawyer in Lahore | Muhammad Faheem Anjum Law Associates</title>
+<link rel="canonical" href="https://muhammadfaheemanjumlawassociates.netlify.app/corporate-tax-law.html">
+<meta name="description" content="Corporate and tax law services in Lahore for businesses, including legal compliance, contracts, disputes and tax-related matters.">
+
+
+<link rel="stylesheet" href="style.css">
+
+<script defer src="analytics.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://muhammadfaheemanjumlawassociates.netlify.app/corporate-tax-law.html#legalservice",
+  "name": "Corporate and Tax Lawyer in Lahore",
+  "url": "https://muhammadfaheemanjumlawassociates.netlify.app/corporate-tax-law.html",
+  "provider": {
+    "@id": "https://muhammadfaheemanjumlawassociates.netlify.app/#organization"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Lahore"
+  },
+  "image": "https://muhammadfaheemanjumlawassociates.netlify.app/Images/logo.png"
+}
+</script>
+</head>
+
+<body>
+
+<section class="practice">
+
+<h2>Corporate & Tax Law</h2>
+
+<div class="service-detail">
+
+<h3>Overview</h3>
+
+<p>
+Businesses and corporate entities operate within a complex legal and regulatory framework that requires compliance with company laws, taxation requirements, contractual obligations and regulatory standards. Failure to comply with these legal obligations can expose businesses to financial penalties, regulatory action and commercial disputes.
+</p>
+
+<p>
+Corporate and tax matters frequently involve company formation, partnership arrangements, commercial agreements, tax assessments, regulatory compliance and dispute resolution. Proper legal guidance helps businesses manage risks, protect assets and maintain compliance with applicable laws.
+</p>
+<p>
+Muhammad Faheem Anjum Law Associates provides comprehensive legal services relating to Corporate and Tax Law. Our legal team assists businesses, entrepreneurs and organizations in navigating legal requirements, resolving disputes and protecting their commercial interests through effective legal representation.
+</p>
+
+<p>
+Whether the matter concerns company registration, commercial contracts, taxation issues, regulatory compliance or business disputes, our firm remains committed to providing practical legal solutions and professional legal support.
+</p>
+<h3>Services</h3>
+
+<ul>
+<li>Company Registration</li>
+<li>Corporate Compliance</li>
+<li>Commercial Agreements</li>
+<li>Tax Matters</li>
+<li>Regulatory Compliance</li>
+<li>Business Disputes</li>
+<li>Legal Consultation</li>
+</ul>
+
+<h3>Required Documents</h3>
+
+<ul>
+<li>CNIC Copy</li>
+<li>Company Documents</li>
+<li>Tax Records</li>
+<li>Commercial Agreements</li>
+<li>Financial Records</li>
+<li>Supporting Documents</li>
+</ul>
+<h3>Court Procedure</h3>
+
+<ul>
+<li>Legal Consultation</li>
+<li>Case Assessment</li>
+<li>Document Review</li>
+<li>Preparation of Proceedings</li>
+<li>Representation Before Relevant Forums</li>
+<li>Final Resolution</li>
+</ul>
+
+<h3>Contact Us</h3>
+
+<a href="tel:+923154943960" class="btn">Call Now</a>
+
+<a href="https://wa.me/923044943960" class="btn-outline">WhatsApp</a>
+
+<p>
+Email:
+<a href="mailto:faheemanjum772@gmail.com">
+faheemanjum772@gmail.com
+</a>
+</p>
+
+</div>
+
+</section>
+
+
+<!-- STRATEGIC ARTICLES -->
+<section class="practice related-articles"><h2>Related Legal Articles</h2><div class="practice-grid">
+<a href="articles/corporate-tax-law.html" class="practice-card"><h3>Corporate & Tax Law Guide</h3></a>
+</div></section>
+<!-- STRATEGIC ARTICLES END -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const contactTargets = [
+    { text: '03154943960', href: 'tel:03154943960', label: 'Call 03154943960' },
+    { text: '03044943960', href: 'https://wa.me/923044943960', label: 'WhatsApp 03044943960' },
+    { text: 'faheemanjum772@gmail.com', href: 'mailto:faheemanjum772@gmail.com', label: 'Email faheemanjum772@gmail.com' },
+    { text: 'Saleem Manzil', href: 'https://www.google.com/maps/search/?api=1&query=Saleem%20Manzil%20Near%20AG%20Office%20Lahore', label: 'Open office location in Google Maps' }
+  ];
+
+  function findTextElement(text) {
+    const all = document.querySelectorAll('body *');
+    for (const el of all) {
+      if (el.children.length === 0 && (el.textContent || '').includes(text)) return el;
+    }
+    return null;
+  }
+
+  function isContactSection(el) {
+    let p = el;
+    for (let i = 0; i < 6 && p; i++, p = p.parentElement) {
+      const t = (p.textContent || '').toLowerCase();
+      if (t.includes('get in touch') || t.includes('contact us')) return p;
+    }
+    return null;
+  }
+
+  contactTargets.forEach(function(target) {
+    const textEl = findTextElement(target.text);
+    if (!textEl) return;
+
+    // Walk upward to the smallest container that contains this contact item but
+    // does not contain another contact target.
+    let card = textEl.parentElement;
+    while (card && card.parentElement) {
+      const section = isContactSection(card);
+      const ownText = (card.textContent || '');
+      const otherTarget = contactTargets.some(t => t !== target && ownText.includes(t.text));
+      if (section && !otherTarget) break;
+      card = card.parentElement;
+    }
+    if (!card || card.dataset.fullContactCard === '1') return;
+
+    card.dataset.fullContactCard = '1';
+    card.style.cursor = 'pointer';
+    card.setAttribute('role', 'link');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', target.label);
+
+    const go = function() { window.location.href = target.href; };
+    card.addEventListener('click', function(e) {
+      // Let an existing nested link behave normally; otherwise make the whole card active.
+      if (e.target.closest('a')) return;
+      go();
+    });
+    card.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        go();
+      }
+    });
+  });
+});
+</script>
+
+</body>
+
+</html>

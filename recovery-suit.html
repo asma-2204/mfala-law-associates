@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-analytics-id" content="G-Z1LBFZ5JJM">
+
+<title>Recovery Suit Lawyer in Lahore | Muhammad Faheem Anjum Law Associates</title>
+<link rel="canonical" href="https://muhammadfaheemanjumlawassociates.netlify.app/recovery-suit.html">
+<meta name="description" content="Recovery suit legal services in Lahore for unpaid loans, contractual dues, invoices and other monetary claims.">
+
+
+<link rel="stylesheet" href="style.css">
+
+<script defer src="analytics.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://muhammadfaheemanjumlawassociates.netlify.app/recovery-suit.html#legalservice",
+  "name": "Recovery Suit Lawyer in Lahore",
+  "url": "https://muhammadfaheemanjumlawassociates.netlify.app/recovery-suit.html",
+  "provider": {
+    "@id": "https://muhammadfaheemanjumlawassociates.netlify.app/#organization"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Lahore"
+  },
+  "image": "https://muhammadfaheemanjumlawassociates.netlify.app/Images/logo.png"
+}
+</script>
+</head>
+<body>
+
+<section class="practice">
+
+<h2>Recovery Suit</h2>
+
+<div class="service-detail">
+
+<h3>Overview</h3>
+
+<p>Recovery Suits are among the most common civil cases in Pakistan. Individuals, businesses and organizations frequently face financial losses due to unpaid debts, outstanding dues, dishonoured cheques, breach of agreements and non-payment of contractual obligations. Many people struggle to recover their lawful money despite repeated requests and negotiations. Muhammad Faheem Anjum Law Associates provides professional legal assistance for recovery of money through proper civil court proceedings. Our legal team assists clients in filing recovery suits, serving legal notices, presenting evidence before the court and pursuing execution proceedings after judgment. We are committed to protecting our clients' financial interests and helping them obtain lawful recovery through legal channels.</p>
+
+<h3>Services</h3>
+
+<p>
+• Debt Recovery<br>
+• Business Claims<br>
+• Contract Disputes<br>
+• Legal Notices<br>
+• Recovery Appeals
+</p>
+
+<h3>Required Documents</h3>
+
+<ul>
+<li>CNIC Copy</li>
+<li>Agreements</li>
+<li>Receipts</li>
+<li>Bank Records</li>
+<li>Supporting Evidence</li>
+</ul>
+
+<h3>Court Procedure</h3>
+
+<ul>
+<li>Case Review</li>
+<li>Suit Filing</li>
+<li>Court Notices</li>
+<li>Evidence Recording</li>
+<li>Final Arguments</li>
+<li>Judgment</li>
+</ul>
+
+<h3>Contact Us</h3>
+
+<a href="tel:+923154943960" class="btn">
+Call Now
+</a>
+
+<a href="https://wa.me/923044943960" class="btn-outline">
+WhatsApp
+</a>
+
+<p>
+Email:
+<a href="mailto:faheemanjum772@gmail.com">faheemanjum772@gmail.com</a>
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- STRATEGIC ARTICLES -->
+<section class="practice related-articles"><h2>Related Legal Articles</h2><div class="practice-grid">
+<a href="articles/recovery-suit.html" class="practice-card"><h3>Recovery Suit</h3></a>
+</div></section>
+<!-- STRATEGIC ARTICLES END -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const contactTargets = [
+    { text: '03154943960', href: 'tel:03154943960', label: 'Call 03154943960' },
+    { text: '03044943960', href: 'https://wa.me/923044943960', label: 'WhatsApp 03044943960' },
+    { text: 'faheemanjum772@gmail.com', href: 'mailto:faheemanjum772@gmail.com', label: 'Email faheemanjum772@gmail.com' },
+    { text: 'Saleem Manzil', href: 'https://www.google.com/maps/search/?api=1&query=Saleem%20Manzil%20Near%20AG%20Office%20Lahore', label: 'Open office location in Google Maps' }
+  ];
+
+  function findTextElement(text) {
+    const all = document.querySelectorAll('body *');
+    for (const el of all) {
+      if (el.children.length === 0 && (el.textContent || '').includes(text)) return el;
+    }
+    return null;
+  }
+
+  function isContactSection(el) {
+    let p = el;
+    for (let i = 0; i < 6 && p; i++, p = p.parentElement) {
+      const t = (p.textContent || '').toLowerCase();
+      if (t.includes('get in touch') || t.includes('contact us')) return p;
+    }
+    return null;
+  }
+
+  contactTargets.forEach(function(target) {
+    const textEl = findTextElement(target.text);
+    if (!textEl) return;
+
+    // Walk upward to the smallest container that contains this contact item but
+    // does not contain another contact target.
+    let card = textEl.parentElement;
+    while (card && card.parentElement) {
+      const section = isContactSection(card);
+      const ownText = (card.textContent || '');
+      const otherTarget = contactTargets.some(t => t !== target && ownText.includes(t.text));
+      if (section && !otherTarget) break;
+      card = card.parentElement;
+    }
+    if (!card || card.dataset.fullContactCard === '1') return;
+
+    card.dataset.fullContactCard = '1';
+    card.style.cursor = 'pointer';
+    card.setAttribute('role', 'link');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', target.label);
+
+    const go = function() { window.location.href = target.href; };
+    card.addEventListener('click', function(e) {
+      // Let an existing nested link behave normally; otherwise make the whole card active.
+      if (e.target.closest('a')) return;
+      go();
+    });
+    card.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        go();
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

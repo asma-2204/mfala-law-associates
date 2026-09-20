@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-analytics-id" content="G-Z1LBFZ5JJM">
+
+<title>Revenue Law Lawyer in Lahore | Muhammad Faheem Anjum Law Associates</title>
+<link rel="canonical" href="https://muhammadfaheemanjumlawassociates.netlify.app/revenue-law.html">
+<meta name="description" content="Revenue law services in Lahore covering land records, mutations, revenue disputes and related legal proceedings.">
+
+
+<link rel="stylesheet" href="style.css">
+
+<script defer src="analytics.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://muhammadfaheemanjumlawassociates.netlify.app/revenue-law.html#legalservice",
+  "name": "Revenue Law Lawyer in Lahore",
+  "url": "https://muhammadfaheemanjumlawassociates.netlify.app/revenue-law.html",
+  "provider": {
+    "@id": "https://muhammadfaheemanjumlawassociates.netlify.app/#organization"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Lahore"
+  },
+  "image": "https://muhammadfaheemanjumlawassociates.netlify.app/Images/logo.png"
+}
+</script>
+</head>
+
+<body>
+
+<section class="practice">
+
+<h2>Revenue Law</h2>
+
+<div class="service-detail">
+
+<h3>Overview</h3>
+
+<p>
+Revenue matters are among the most significant land-related legal disputes in Pakistan. Land ownership, mutation entries, revenue records, inheritance mutations, demarcation disputes and correction of land records frequently become subjects of litigation before Revenue Authorities and higher forums. Incorrect entries in official records often create serious complications affecting ownership rights, possession and future transactions.
+</p>
+
+<p>
+Many landowners face difficulties due to unlawful mutations, incorrect revenue entries, fraudulent transfers and disputes relating to agricultural land. Such matters require proper legal representation to ensure that land records accurately reflect lawful ownership and possession rights.
+</p>
+<p>
+Muhammad Faheem Anjum Law Associates provides professional legal services relating to Revenue Law and land record disputes. Our legal team assists clients in mutation proceedings, appeals, revisions, demarcation matters and other revenue-related disputes before the relevant authorities and courts.
+</p>
+
+<p>
+Whether the matter concerns agricultural land, inherited property, ownership disputes or correction of official records, our firm remains committed to protecting our clients' property rights through effective legal representation and lawful remedies.
+</p>
+<h3>Services</h3>
+
+<ul>
+<li>Mutation Proceedings</li>
+<li>Revenue Appeals</li>
+<li>Revenue Revisions</li>
+<li>Land Record Corrections</li>
+<li>Demarcation Matters</li>
+<li>Inheritance Mutations</li>
+<li>Revenue Litigation</li>
+</ul>
+<h3>Required Documents</h3>
+
+<ul>
+<li>CNIC Copy</li>
+<li>Property Documents</li>
+<li>Revenue Records</li>
+<li>Mutation Documents</li>
+<li>Land Ownership Evidence</li>
+<li>Supporting Records</li>
+</ul>
+
+<h3>Court Procedure</h3>
+
+<ul>
+<li>Case Review</li>
+<li>Document Verification</li>
+<li>Preparation of Proceedings</li>
+<li>Filing Before Revenue Authority</li>
+<li>Hearings & Evidence</li>
+<li>Final Orders</li>
+</ul>
+<h3>Contact Us</h3>
+
+<a href="tel:+923154943960" class="btn">Call Now</a>
+
+<a href="https://wa.me/923044943960" class="btn-outline">WhatsApp</a>
+
+<p>
+Email:
+<a href="mailto:faheemanjum772@gmail.com">
+faheemanjum772@gmail.com
+</a>
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- STRATEGIC ARTICLES -->
+<section class="practice related-articles"><h2>Related Legal Articles</h2><div class="practice-grid">
+<a href="articles/revenue-law.html" class="practice-card"><h3>Revenue Law</h3></a>
+</div></section>
+<!-- STRATEGIC ARTICLES END -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const contactTargets = [
+    { text: '03154943960', href: 'tel:03154943960', label: 'Call 03154943960' },
+    { text: '03044943960', href: 'https://wa.me/923044943960', label: 'WhatsApp 03044943960' },
+    { text: 'faheemanjum772@gmail.com', href: 'mailto:faheemanjum772@gmail.com', label: 'Email faheemanjum772@gmail.com' },
+    { text: 'Saleem Manzil', href: 'https://www.google.com/maps/search/?api=1&query=Saleem%20Manzil%20Near%20AG%20Office%20Lahore', label: 'Open office location in Google Maps' }
+  ];
+
+  function findTextElement(text) {
+    const all = document.querySelectorAll('body *');
+    for (const el of all) {
+      if (el.children.length === 0 && (el.textContent || '').includes(text)) return el;
+    }
+    return null;
+  }
+
+  function isContactSection(el) {
+    let p = el;
+    for (let i = 0; i < 6 && p; i++, p = p.parentElement) {
+      const t = (p.textContent || '').toLowerCase();
+      if (t.includes('get in touch') || t.includes('contact us')) return p;
+    }
+    return null;
+  }
+
+  contactTargets.forEach(function(target) {
+    const textEl = findTextElement(target.text);
+    if (!textEl) return;
+
+    // Walk upward to the smallest container that contains this contact item but
+    // does not contain another contact target.
+    let card = textEl.parentElement;
+    while (card && card.parentElement) {
+      const section = isContactSection(card);
+      const ownText = (card.textContent || '');
+      const otherTarget = contactTargets.some(t => t !== target && ownText.includes(t.text));
+      if (section && !otherTarget) break;
+      card = card.parentElement;
+    }
+    if (!card || card.dataset.fullContactCard === '1') return;
+
+    card.dataset.fullContactCard = '1';
+    card.style.cursor = 'pointer';
+    card.setAttribute('role', 'link');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', target.label);
+
+    const go = function() { window.location.href = target.href; };
+    card.addEventListener('click', function(e) {
+      // Let an existing nested link behave normally; otherwise make the whole card active.
+      if (e.target.closest('a')) return;
+      go();
+    });
+    card.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        go();
+      }
+    });
+  });
+});
+</script>
+
+</body>
+
+</html>
